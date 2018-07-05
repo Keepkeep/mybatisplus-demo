@@ -30,5 +30,10 @@
 [码云](https://gitee.com/baomidou/mybatis-plus)
 <br><br>
 
+# Mybatis(前提知识)
+
+[Mybatis_HelloWorld](https://github.com/wang125631/mybatisplus-demo/tree/master/src/main/java/com/wpx/readme/Mybatis_01_HelloWorld.md)
+[插入主键获取和动态sql](https://github.com/wang125631/mybatisplus-demo/tree/master/src/main/java/com/wpx/readme/Mybatis_02_主键的获取和动态Sql.md)
+
 # 本项目说明
 [Wiki说明](https://github.com/wang125631/mybatisplus-demo/wiki)

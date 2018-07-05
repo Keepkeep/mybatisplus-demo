@@ -18,7 +18,11 @@ import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.wpx.mapper.EmployeeMapper;
 import com.wpx.pojo.Employee;
-
+/**
+ * MybatisPlus 测试类
+ * 
+ * @author wangpx
+ */
 public class App {
 	private ApplicationContext ioc = 
 			new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -179,9 +183,5 @@ public class App {
 			System.out.println(selectList3);
 			
 	}
-	
-	
-	
-	
-	
+
 }
