@@ -33,7 +33,21 @@
 # Mybatis(前提知识)
 
 [Mybatis_HelloWorld](https://github.com/wang125631/mybatisplus-demo/tree/master/src/main/java/com/wpx/readme/Mybatis_01_HelloWorld.md)
+<br>
+
 [插入主键获取和动态sql](https://github.com/wang125631/mybatisplus-demo/tree/master/src/main/java/com/wpx/readme/Mybatis_02_主键的获取和动态Sql.md)
+
+<br>
+[Mybatis_03_缓存机制](https://github.com/wang125631/mybatisplus-demo/tree/master/src/main/java/com/wpx/readme/Mybatis_03_缓存机制.md)
+
+<br>
+[Mybatis插件]()
+
+<br>
+[Mybatis代码生成器](https://github.com/mybatis/generator)
+
+
+
 
 # 本项目说明
 [Wiki说明](https://github.com/wang125631/mybatisplus-demo/wiki)
