@@ -73,6 +73,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<!-- 使用插件 -->
 	<plugins>
-		<plugin interceptor=""></plugin>
+		<plugin interceptor="com.wpx.intercepts.MyIntercept"></plugin>
 	</plugins>
 </configuration>
