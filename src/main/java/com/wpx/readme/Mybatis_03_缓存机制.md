@@ -7,16 +7,19 @@
 ###### 二级缓存
 
 全局配置文件中开启缓存,该配置默认为true
-	
+
+```xml
 	<!-- 全局配置 -->
 	<settings>
 		<!-- 开启缓存 -->
  		<setting name="cacheEnabled" value="true"/>
 	</settings>
-	
+```
+
 二级缓存为mapper级别,在mapper文件中使用使用cache标签<br>
 当SqlSession关闭时,会将缓存放置二级缓存中
-	
+
+```xml	
 	<?xml version="1.0" encoding="UTF-8" ?>
 	<!DOCTYPE mapper
 	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -40,24 +43,29 @@
 				实现Cache接口即可； -->
 		<cache blocking="" flushInterval="50000" eviction="FIFO" readOnly="false" size="2*1024" 		></cache>
 	</mapper>
-	
+```
 	
 ###### 第三方缓存
 	
 添加ehcache的依赖
-	
+
+```xml
 	<dependency>
 	    <groupId>org.mybatis.caches</groupId>
 	    <artifactId>mybatis-ehcache</artifactId>
 	    <version>1.1.0</version>
      </dependency>
+```
 
 使用cache的type属性,他可以使用自定义的缓存
-	
+
+```xml	
 	<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+```
 
 想要程序顺利运行,你还需要添加ehcache.xml
 
+```xml
 	<?xml version="1.0" encoding="UTF-8"?>
 	ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	 xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
@@ -95,4 +103,4 @@
 	l diskExpiryThreadIntervalSeconds - 磁盘缓存的清理线程运行间隔，默认是120秒。每个120s，相应的线程会进行一次EhCache中数据的清理工作
 	l memoryStoreEvictionPolicy - 当内存缓存达到最大，有新的element加入的时候， 移除缓存中element的策略。默认是LRU（最近最少使用），可选的有LFU（最不常使用）和FIFO（先进先出）
 	 -->
-	
+```	
